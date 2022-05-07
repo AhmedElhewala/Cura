@@ -1,0 +1,176 @@
+body {
+    direction: rtl;
+}
+
+
+/* Start Header */
+
+header .container .search-input input {
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -o-border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -o-border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    -webkit-top-left-right-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -ms-border-top-left-radius: 0;
+    -o-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-bottom-left-right-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -ms-border-bottom-left-radius: 0;
+    -o-border-bottom-left-radius: 0;
+}
+
+header .container .search-input button {
+    right: unset;
+    left: 0;
+    border-top-left-radius: 8px;
+    -webkit-top-left-right-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    -ms-border-top-left-radius: 8px;
+    -o-border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-bottom-left-right-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -o-border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -ms-border-top-right-radius: 0;
+    -o-border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -ms-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
+}
+
+header .container .search-input button::after {
+    left: unset;
+    right: 0;
+}
+
+header .container .search-input button:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+header .container .header-login>a::after {
+    left: unset;
+    right: 0;
+}
+
+header .container .header-login>a:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+header .container .user-section .notification-icon .notification-counter {
+    right: unset;
+    left: 7px;
+}
+
+@media (max-width: 767px) {
+    header .container .user-section .notification-icon .notification-counter {
+        left: 5px;
+    }
+}
+
+
+/* End Header */
+
+
+/* Start Option Box */
+
+.option {
+    right: unset;
+    left: -215px;
+}
+
+@media (max-width: 767px) {
+    .option {
+        right: unset;
+        left: -195px;
+    }
+}
+
+.option.open {
+    right: unset;
+    left: 0;
+}
+
+.option .option-icon {
+    left: unset;
+    right: -45px;
+}
+
+.option .lang-option .lang-box>a::after {
+    left: unset;
+    right: 0;
+}
+
+.option .lang-option .lang-box>a.active::after,
+.option .lang-option .lang-box>a:hover::after {
+    right: 105%;
+}
+
+
+/* End Option Box */
+
+
+/* Start Go Up Button */
+
+.go-up {
+    right: unset;
+    left: -75px;
+}
+
+.go-up.show {
+    right: unset;
+    left: -5px;
+}
+
+
+/* End Go Up Button */
+
+
+/* Start NavBar */
+
+nav>ul.container li::after {
+    left: unset;
+    right: 0;
+}
+
+nav>ul.container li>ul {
+    left: unset;
+    right: 0;
+}
+
+
+/* End NavBar */
+
+
+/* Start Form */
+
+.user-form form div.form-section .login-btn::after,
+.user-form form div.regist-new a::after {
+    left: unset;
+    right: 0;
+}
+
+.user-form form div.form-section .login-btn:hover::after,
+.user-form form div.regist-new a:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+
+/* End Form */
