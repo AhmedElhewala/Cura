@@ -38,6 +38,8 @@ body {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    min-height: 100vh;
+    position: relative;
 }
 
 .container {
