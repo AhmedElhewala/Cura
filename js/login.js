@@ -148,10 +148,8 @@ optColors.forEach(li => {
         document.documentElement.style.setProperty("--option-color", li.dataset.color);
         headerLogo.setAttribute("src", `assets/imgs/${li.dataset.logo}`);
         footerLogo.setAttribute("src", `assets/imgs/${li.dataset.logo}`);
-        mainLogo.setAttribute("src", `assets/imgs/${li.dataset.main}`);
         localStorage.setItem("option-color", li.dataset.color);
         localStorage.setItem("logo-color", li.dataset.logo);
-        localStorage.setItem("main-logo", li.dataset.main);
         optColors.forEach(clr => {
             if (clr.classList.contains("active")) {
                 clr.classList.remove("active");
