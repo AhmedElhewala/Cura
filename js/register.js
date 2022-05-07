@@ -226,7 +226,7 @@ $(langArabic).on("click", function(e) {
         $(langArabic).addClass("active");
         $("html").attr("lang", "ar");
         $("body").attr("translate", "yes");
-        $(englishStyle).after(`<link rel="stylesheet" href="css/login-ar.css" class="style-ar" />`);
+        $(englishStyle).after(`<link rel="stylesheet" href="css/register-ar.css" class="style-ar" />`);
         localStorage.setItem("page-language", "ar");
     } else {
         e.preventDefault();
