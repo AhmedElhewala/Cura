@@ -1457,7 +1457,7 @@ nav>ul.container li>ul>li>a {
 
 .user-form {
     width: 100%;
-    padding: 30px 15px;
+    padding: 80px 15px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
     background-color: var(--theme-background);

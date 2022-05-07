@@ -38,8 +38,6 @@ body {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-    min-height: 100vh;
-    position: relative;
 }
 
 .container {
@@ -1459,7 +1457,7 @@ nav>ul.container li>ul>li>a {
 
 .user-form {
     width: 100%;
-    padding: 30px 15px;
+    padding: 80px 15px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
     background-color: var(--theme-background);
@@ -1731,7 +1729,7 @@ footer {
     width: 100%;
     background-color: var(--dark-color);
     position: relative;
-    bottom: 0;
+    bottom: -20px;
     color: var(--light-color);
     overflow: hidden;
 }
