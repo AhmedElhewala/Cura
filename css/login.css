@@ -1484,6 +1484,10 @@ nav>ul.container li>ul>li>a {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    -webkit-box-shadow: 0 0 5px 0 var(--theme-color);
+    -o-box-shadow: 0 0 5px 0 var(--theme-color);
+    -ms-box-shadow: 0 0 5px 0 var(--theme-color);
+    box-shadow: 0 0 5px 0 var(--theme-color);
 }
 
 @media (max-width: 767px) {
