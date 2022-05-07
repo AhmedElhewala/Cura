@@ -32,6 +32,7 @@ body {
     font-family: "Roboto", sans-serif;
     width: 100%;
     background-color: var(--theme-background);
+    overflow: hidden;
     direction: ltr;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
