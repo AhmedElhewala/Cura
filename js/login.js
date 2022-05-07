@@ -95,12 +95,9 @@ if (saveLanguage !== null) {
     }
 }
 // End check Localstorage
-// Fade preloader out & set the form height
+// Fade preloader out
 $(document).ready(() => {
     $(preLoad).fadeOut("slow");
-    //         if ($(window).height() > 814) {
-    //             $(formSection).height("+=" + `${$(window).height() - $(`body`).height()}px`);
-    // }
 });
 // Toggle profile menu
 $(profile).on("click", function() {
@@ -110,7 +107,7 @@ $(profile).on("click", function() {
 $(navMenu).on("click", function() {
     toggleNav();
 });
-// Fade navbar in after resizeing & set the new form height
+// Fade navbar in after resizeing
 $(window).on("resize", function() {
     if ($(document).width() >= 767) {
         $(navBar).slideDown("fast");
@@ -120,9 +117,6 @@ $(window).on("resize", function() {
             $(navMenu).removeClass("open");
         }
     }
-    // if ($(window).height() > 814) {
-    //     $(formSection).height("+=" + `${$(window).height() - $(`body`).height()}px`);
-    // }
 });
 // Toggle profile function
 function toggleProfile() {
