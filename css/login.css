@@ -1657,7 +1657,6 @@ nav>ul.container li>ul>li>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border: none;
     position: relative;
     overflow: hidden;
@@ -1666,16 +1665,6 @@ nav>ul.container li>ul>li>a {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-}
-
-.user-form form div.form-section .login-btn svg,
-.user-form form div.regist-new a svg {
-    visibility: hidden;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -1709,11 +1698,6 @@ nav>ul.container li>ul>li>a {
 .user-form form div.form-section .login-btn:hover::after,
 .user-form form div.regist-new a:hover::after {
     left: 105%;
-}
-
-.user-form form div.form-section .login-btn:hover svg,
-.user-form form div.regist-new a:hover svg {
-    visibility: visible;
 }
 
 
