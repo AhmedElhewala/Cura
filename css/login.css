@@ -31,6 +31,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     width: 100%;
+    background-color: var(--theme-background);
     direction: ltr;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
