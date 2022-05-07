@@ -25,6 +25,7 @@ let footerLogo = document.querySelector(`footer .container .top .end-wish img`);
 // go up button variables
 let goUpBtn = document.querySelector(`.go-up`);
 // form variables
+let formSection = `.user-form`;
 let emailInput = `.user-form form div.email-section input.user-email`;
 let emailIcon = `.user-form form div.email-section .email-icon svg`;
 let passInput = `.user-form form div.pass-section input.user-password`;
@@ -94,9 +95,12 @@ if (saveLanguage !== null) {
     }
 }
 // End check Localstorage
-// Fade preloader out
+// Fade preloader out & set the form height
 $(document).ready(() => {
     $(preLoad).fadeOut("slow");
+    //         if ($(window).height() > 814) {
+    //             $(formSection).height("+=" + `${$(window).height() - $(`body`).height()}px`);
+    // }
 });
 // Toggle profile menu
 $(profile).on("click", function() {
@@ -106,7 +110,7 @@ $(profile).on("click", function() {
 $(navMenu).on("click", function() {
     toggleNav();
 });
-// Fade navbar in after resizeing
+// Fade navbar in after resizeing & set the new form height
 $(window).on("resize", function() {
     if ($(document).width() >= 767) {
         $(navBar).slideDown("fast");
@@ -116,6 +120,9 @@ $(window).on("resize", function() {
             $(navMenu).removeClass("open");
         }
     }
+    // if ($(window).height() > 814) {
+    //     $(formSection).height("+=" + `${$(window).height() - $(`body`).height()}px`);
+    // }
 });
 // Toggle profile function
 function toggleProfile() {
@@ -267,6 +274,14 @@ $(document).on("click", function(e) {
         }
     }
 });
+// showing the go up btn
+window.onscroll = function() {
+    if (window.scrollY >= window.innerHeight) {
+        goUpBtn.classList.add("show");
+    } else {
+        goUpBtn.classList.remove("show");
+    }
+};
 // click on go up button
 goUpBtn.addEventListener("click", () => {
     window.scrollTo({
