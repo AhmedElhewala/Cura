@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/register.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start PreLoader -->
+    <div class="preload">
+        <div class="heart"></div>
+    </div>
+    <!-- End PreLoader -->
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="toggle-menu">
+                <span class="out"></span>
+                <span class="in"></span>
+                <span class="out"></span>
+            </div>
+            <picture class="logo-icon">
+                <img src="assets/imgs/Red-logo.webp" alt="Cura" class="logo" />
+            </picture>
+            <form class="search-input">
+                <input type="search" name="ask" id="header-search" placeholder="Whats Wrong with your Pet!" required />
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="header-login">
+                <a href="">Log In</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Navbar -->
+    <nav>
+        <ul class="container">
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <a href="#">Emergency</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-heart-pulse"></i>
+                <a href="#">Health</a>
+                <ul class="megamenu">
+                    <li>
+                        <i class="fa-solid fa-bed-pulse"></i>
+                        <a href="#">Monitoring</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-comment-medical"></i>
+                        <a href="#">Consultation</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-capsules"></i>
+                        <a href="#">Medicines</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-notes-medical"></i>
+                        <a href="#">Instructions</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clipboard-question"></i>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa-solid fa-house-medical-circle-check"></i>
+                <a href="#">Care</a>
+                <ul class="megamenu">
+                    <li>
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <a href="#">Follow up</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrows-to-eye"></i>
+                        <a href="#">Assessment</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-road-circle-check"></i>
+                        <a href="#">Husbandry</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        <a href="#">Instructions</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-doctor"></i>
+                <a href="#">Vets</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <a href="#">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Options Box -->
+    <div class="option">
+        <div class="option-icon">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="option-box">
+            <div class="color-option">
+                <span class="option-heading">Theme Color</span>
+                <ul class="color">
+                    <li class="active" data-color="#c82222" data-logo="Red-logo.webp" data-main="cura-red.webp"></li>
+                    <li data-color="#FB4E93" data-logo="Pink-logo.webp" data-main="cura-pink.webp"></li>
+                    <li data-color="#00e57f" data-logo="Green-logo.webp" data-main="cura-green.webp"></li>
+                    <li data-color="#04dede" data-logo="Blue-logo.webp" data-main="cura-blue.webp"></li>
+                    <li data-color="#ffc107" data-logo="Yellow-logo.webp" data-main="cura-yellow.webp"></li>
+                </ul>
+            </div>
+            <div class="mood-option">
+                <span class="option-heading">Theme Mood</span>
+                <div class="mood">
+                    <div class="moon">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="mood-bar light">
+                        <span class="mood-btn"></span>
+                    </div>
+                    <div class="sun">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-option">
+                <span class="option-heading">Language</span>
+                <div class="lang-box" translate="no">
+                    <a class="english active" href="">English</a>
+                    <a class="arabic" href="">العربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Options Box -->
+    <!-- Start Go Up -->
+    <div class="go-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- End Go Up -->
+    <!-- Start Form -->
+    <div class="user-form">
+        <form action="">
+            <div class="form-section name-section">
+                <input type="text" name="name" id="" class="user-name" placeholder="Enter Your Name" required/>
+                <div class="name-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="form-section email-section">
+                <input type="email" name="email" id="" class="user-email" placeholder="Enter Your Email" required/>
+                <div class="email-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="form-section pass-section pass-original">
+                <input type="password" name="password" id="" class="user-password" placeholder="Enter Your password" required/>
+                <div class="show-password">
+                    <i class="fa-solid fa-eye-slash" title="Show password"></i>
+                </div>
+            </div>
+            <div class="form-section pass-section pass-confirm">
+                <input type="password" name="password-confirm" id="" class="user-password" placeholder="Confirm Your password" required/>
+                <div class="show-password">
+                    <i class="fa-solid fa-eye-slash" title="Show password"></i>
+                </div>
+            </div>
+            <div class="form-section regist-section">
+                <button type="submit" class="regist-btn">Register</button>
+            </div>
+            <div class="form-section login-acc">
+                <a href="#">Already have an account</a>
+            </div>
+        </form>
+    </div>
+    <!-- End Form -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="top">
+                <div class="end-wish">
+                    <img src="assets/imgs/Red-logo.webp" alt="Cura" class="logo" />
+                    <span>We wish that we help you with what you need<i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f facebook"><a href="#"></a></i>
+                    <i class="fa-brands fa-google-plus-g google"><a href="#"></a></i>
+                    <i class="fa-brands fa-twitter twitter"><a href="#"></a></i>
+                    <i class="fa-brands fa-whatsapp whatsapp"><a href="#"></a></i>
+                    <i class="fa-brands fa-linkedin-in linkedin"><a href="#"></a></i>
+                    <i class="fa-brands fa-instagram instagram"><a href="#"></a></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <span>Cura<i class="fa-solid fa-heart"></i></span> 2022 &copy; Copyright. All Rights &reg; is reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
