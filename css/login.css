@@ -32,7 +32,6 @@ body {
     font-family: "Roboto", sans-serif;
     width: 100%;
     background-color: var(--theme-background);
-    overflow: hidden;
     direction: ltr;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -1716,7 +1715,7 @@ footer {
     width: 100%;
     background-color: var(--dark-color);
     position: relative;
-    top: 100%;
+    bottom: 0;
     color: var(--light-color);
     overflow: hidden;
 }
