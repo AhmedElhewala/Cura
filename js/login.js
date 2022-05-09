@@ -66,11 +66,11 @@ if (saveThemeStat !== null) {
 }
 // theme background color value
 if (saveThemeBG !== null) {
-    $("body").get(0).style.setProperty("--theme-background", saveThemeBG);
+    $("body").css("--theme-background", saveThemeBG);
 }
 // theme color value
 if (saveThemeClr !== null) {
-    $("body").get(0).style.setProperty("--theme-color", saveThemeClr);
+    $("body").css("--theme-color", saveThemeClr);
 }
 // page language value
 if (saveLanguage !== null) {
@@ -163,15 +163,15 @@ optColors.forEach(li => {
 // click on theme bar
 $(themeBar).on("click", function() {
     if ($(themeBar).hasClass("light")) {
-        $("body").get(0).style.setProperty("--theme-background", "#333");
-        $("body").get(0).style.setProperty("--theme-color", "#fff");
+        $("body").css("--theme-background", "#333");
+        $("body").css("--theme-color", "#fff");
         localStorage.setItem("theme-status", "dark");
         localStorage.setItem("theme-background", "#333");
         localStorage.setItem("theme-color", "#fff");
         $(themeBar).toggleClass("light dark");
     } else if ($(themeBar).hasClass("dark")) {
-        $("body").get(0).style.setProperty("--theme-background", "#fff");
-        $("body").get(0).style.setProperty("--theme-color", "#333");
+        $("body").css("--theme-background", "#fff");
+        $("body").css("--theme-color", "#333");
         localStorage.setItem("theme-status", "light");
         localStorage.setItem("theme-background", "#fff");
         localStorage.setItem("theme-color", "#333");
@@ -181,8 +181,8 @@ $(themeBar).on("click", function() {
 // click on moon icon
 $(themeMoon).on("click", function() {
     if ($(themeBar).hasClass("light")) {
-        $("body").get(0).style.setProperty("--theme-background", "#333");
-        $("body").get(0).style.setProperty("--theme-color", "#fff");
+        $("body").css("--theme-background", "#333");
+        $("body").css("--theme-color", "#fff");
         localStorage.setItem("theme-status", "dark");
         localStorage.setItem("theme-background", "#333");
         localStorage.setItem("theme-color", "#fff");
@@ -192,8 +192,8 @@ $(themeMoon).on("click", function() {
 // click on sun icon
 $(themeSun).on("click", function() {
     if ($(themeBar).hasClass("dark")) {
-        $("body").get(0).style.setProperty("--theme-background", "#fff");
-        $("body").get(0).style.setProperty("--theme-color", "#333");
+        $("body").css("--theme-background", "#fff");
+        $("body").css("--theme-color", "#333");
         localStorage.setItem("theme-status", "light");
         localStorage.setItem("theme-background", "#fff");
         localStorage.setItem("theme-color", "#333");
