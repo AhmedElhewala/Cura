@@ -1590,8 +1590,7 @@ nav>ul.container li>ul>li>a {
 }
 
 .user-form form div.email-section input.user-email:focus,
-.user-form form div.pass-section input.user-password:focus,
-.user-form form div.remember-section .remember-me input:checked {
+.user-form form div.pass-section input.user-password:focus {
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
 }
